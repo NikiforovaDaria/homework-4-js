@@ -1,12 +1,12 @@
 //1) Write largest and smallest functions that returns the largest and smallest number passed like a argument.
 
-const largest = (arr) => {
-    const answerMax = Math.max.apply(this, arr);
+const largest = (...arr) => {
+    const answerMax = Math.max.call(this, ...arr);
     return answerMax;
 }
 
-const smallest = (arr) => {
-    const answerMin = Math.min.apply(this, arr)
+const smallest = (...arr) => {
+    const answerMin = Math.min.call(this, ...arr)
     return answerMin
 }
 
